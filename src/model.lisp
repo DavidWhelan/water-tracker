@@ -16,4 +16,4 @@
 
 (mito:deftable water ()
   ((amount :col-type :int)
-   (user-id :references (user id) :col-type :int)))
+   (user :col-type user)))

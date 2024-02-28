@@ -25,3 +25,5 @@
   (connect-to-database #p"./db/water-tracker")
   (create-tables)
   (migrate-tables))
+
+
