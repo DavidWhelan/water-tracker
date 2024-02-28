@@ -8,7 +8,7 @@
 	   #:water))
 (in-package :water-tracker.model)
 
-(mito:deftable water-user ()
+(mito:deftable user ()
   ((first-name :col-type (:varchar 256))
    (last-name :col-type (:varchar 256))
    (email :col-type (:varchar 256))
@@ -16,4 +16,4 @@
 
 (mito:deftable water ()
   ((amount :col-type :int)
-   (user-id :references (user id))))
+   (user-id :references (user id) :col-type :int)))
